@@ -1,0 +1,10 @@
+ALTER SESSION SET NLS_DATE_FORMAT = 'YYYY-MM-DD';
+
+INSERT INTO salaries (employee_id, start_date, end_date, salary)
+VALUES
+(3, '2024-04-05', NULL, 33000),
+(4, '2024-04-05', NULL, 70000),
+(1, '2024-09-05', '2024-10-05', 65000),
+(1, '2024-10-05', NULL, 80000),
+(2, '2024-04-05', '2024-09-05', 65000),
+(2, '2024-09-05', NULL, 120000);
