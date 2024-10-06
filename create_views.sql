@@ -66,7 +66,7 @@ JOIN
     dependents ON employees.employee_id = dependents.employee_id;
 
 --view projects and locations
-CREATE VIEW vw_projects_locations AS
+CREATE VIEW vw_project_locations AS
 SELECT 
     projects.project_id,
     projects.project_name,
