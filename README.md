@@ -19,7 +19,7 @@ erDiagram
 		INT person_id FK
 		INT title_id FK
 		INT supervisor_employee_id FK
-		INT department_number
+		INT department_id
 	}
 
 	job_titles {
