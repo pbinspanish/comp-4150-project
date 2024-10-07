@@ -1,3 +1,8 @@
+# COMP-4150 Project
+> Josiah Henson | John Oreva
+## Project Info
+This repository contains the necessary SQL files to create the Company database. Running `create_database.sql` will drop any existing conflicting tables and then create the full database schema along with inserting sample data into the database.
+## Database Schema Diagram
 ```mermaid
 ---
 title: Project Phase 1 ER Diagram
