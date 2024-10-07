@@ -93,3 +93,20 @@ JOIN
 JOIN 
     locations ON department_locations.location_id = locations.location_id;
 
+--view job title & salary
+CREATE VIEW vw_EmployeeJobTitleSalary AS
+SELECT 
+    employees.employee_id,
+    CONCAT(people.first_name, ' ', people.last_name) AS employee_name,
+    job_titles.title_name AS job_title,
+    salaries.salary
+FROM 
+    employees
+JOIN 
+    people ON employees.person_id = people.person_id
+JOIN 
+    job_titles ON employees.title_id = job_titles.title_id
+JOIN 
+    salaries ON employees.employee_id = salaries.employee_id
+WHERE 
+    salaries.end_date IS NULL;
