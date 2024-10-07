@@ -13,3 +13,5 @@
 @@insertions/insert_department_locations.sql
 @@insertions/insert_projects.sql
 @@insertions/insert_works_on.sql
+
+@@create_views.sql
