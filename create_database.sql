@@ -1,3 +1,4 @@
+@@drop_views.sql
 @@drop_company_tables.sql
 
 @@create_company_tables.sql
