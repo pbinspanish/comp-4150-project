@@ -2,6 +2,8 @@
 
 @@create_company_tables.sql
 
+@@create_indexes.sql
+
 @@insertions/insert_people.sql
 @@insertions/insert_phone_numbers.sql
 @@insertions/insert_job_titles.sql
