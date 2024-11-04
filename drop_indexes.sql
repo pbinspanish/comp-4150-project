@@ -1,0 +1,15 @@
+DROP INDEX IX_employees_person_id;
+DROP INDEX IX_employees_title_id;
+DROP INDEX IX_employees_department_id;
+DROP INDEX IX_employees_supervisor_employee_id;
+DROP INDEX IX_phone_numbers_person_id;
+DROP INDEX IX_dependents_employee_id;
+DROP INDEX IX_dependents_person_id;
+DROP INDEX IX_salaries_employee_id;
+DROP INDEX IX_salaries_end_date;
+DROP INDEX IX_salaries_salary;
+DROP INDEX IX_projects_department_id;
+DROP INDEX IX_projects_location_id;
+DROP INDEX IX_department_locations_location_id;
+DROP INDEX IX_works_on_employee_id;
+DROP INDEX IX_works_on_project_id;
