@@ -1,4 +1,4 @@
-ALTER SESSION SET NLS_DATE_FORMAT = 'YYYY-MM-DD';
+
 
 INSERT INTO people (person_id, first_name, middle_name, last_name, birthday, sex, ssn, address)
 VALUES

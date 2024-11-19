@@ -1,4 +1,4 @@
-ALTER SESSION SET NLS_DATE_FORMAT = 'YYYY-MM-DD';
+
 
 INSERT INTO salaries (employee_id, start_date, end_date, salary)
 VALUES

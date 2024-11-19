@@ -1,4 +1,4 @@
-ALTER SESSION SET NLS_DATE_FORMAT = 'YYYY-MM-DD';
+
 
 INSERT INTO departments (department_name, department_id, manager_start_date)
 VALUES

@@ -4,33 +4,33 @@
 
 CREATE TABLE people (
     person_id                   INT PRIMARY KEY NOT NULL,
-    first_name                  NVARCHAR2(2000) NOT NULL,
-    middle_name                 NVARCHAR2(2000),
-    last_name                   NVARCHAR2(2000) NOT NULL,
+    first_name                  VARCHAR(2000) NOT NULL,
+    middle_name                 VARCHAR(2000),
+    last_name                   VARCHAR(2000) NOT NULL,
     birthday                    DATE,
     sex                         CHAR(1),
     ssn                         CHAR(9) NOT NULL,
-    address                     NVARCHAR2(2000)
+    address                     VARCHAR(2000)
 );
 
 
 CREATE TABLE phone_numbers (
     person_id                   INT NOT NULL REFERENCES people(person_id),
     phone_number                CHAR(10) NOT NULL,
-    phone_number_description    NVARCHAR2(2000) NOT NULL,
+    phone_number_description    VARCHAR(2000) NOT NULL,
     CONSTRAINT phone_numbers_pk PRIMARY KEY (person_id, phone_number)
 );
 
 
 CREATE TABLE job_titles (
     title_id                    INT PRIMARY KEY NOT NULL,
-    title_name                  NVARCHAR2(2000)
+    title_name                  VARCHAR(2000)
 );
 
 
 CREATE TABLE departments (
     department_id               INT PRIMARY KEY NOT NULL,
-    department_name             NVARCHAR2(2000) NOT NULL UNIQUE,
+    department_name             VARCHAR(2000) NOT NULL UNIQUE,
     manager_start_date          DATE
 );
 
@@ -47,7 +47,7 @@ CREATE TABLE employees (
 CREATE TABLE dependents (
     employee_id                 INT NOT NULL REFERENCES employees(employee_id),
     person_id                   INT NOT NULL REFERENCES people(person_id),
-    relationship                NVARCHAR2(2000),
+    relationship                VARCHAR(2000),
     CONSTRAINT dependents_pk PRIMARY KEY (employee_id, person_id)
 );
 
@@ -63,7 +63,7 @@ CREATE TABLE salaries (
 
 CREATE TABLE locations (
     location_id                 INT PRIMARY KEY NOT NULL,
-    location_name               NVARCHAR2(2000)
+    location_name               VARCHAR(2000)
 );
 
 
@@ -75,7 +75,7 @@ CREATE TABLE department_locations (
 
 CREATE TABLE projects (
     project_id                  INT PRIMARY KEY NOT NULL,
-    project_name                NVARCHAR2(2000) NOT NULL,
+    project_name                VARCHAR(2000) NOT NULL,
     location_id                 INT REFERENCES locations(location_id),
     department_id               INT NOT NULL REFERENCES departments(department_id)
 );
