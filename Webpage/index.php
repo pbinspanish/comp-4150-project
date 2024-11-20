@@ -21,6 +21,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/templates/header.php';
 	</div>
 </div>
 
+<div class="row mt-3">
+	<div class="col-auto">
+		<a class="btn btn-secondary" href="javascript:close()" role="button">Close</a>
+	</div>
+</div>
+
 <?php
 include $_SERVER['DOCUMENT_ROOT'] . '/templates/footer.php';
 ?>

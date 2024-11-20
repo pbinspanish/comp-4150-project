@@ -17,6 +17,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/templates/header.php';
 	<button type="submit" class="btn btn-primary">Sign In</button>
 </form>
 
+<div class="row mt-3">
+	<div class="col-auto">
+		<a class="btn btn-secondary" href="javascript:history.back()" role="button">Return</a>
+	</div>
+</div>
+
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['ssn'])) {
 	session_start();
