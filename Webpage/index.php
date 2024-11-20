@@ -1,26 +1,26 @@
 <?php
-require_once 'db_config.php';
-include 'header.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/lib/db_config.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/templates/header.php';
 ?>
 
-<div class="jumbotron">
-	<h1 class="display-4 mb-4">Employee Database</h1>
-	<div class="list-group">
-		<a href="employee_info.php" class="list-group-item list-group-item-action">
-			<h5 class="mb-1">Employee Information</h5>
-			<p class="mb-1">Look up employee details using SSN</p>
-		</a>
-		<a href="employee_projects.php" class="list-group-item list-group-item-action">
-			<h5 class="mb-1">Employee Projects</h5>
-			<p class="mb-1">Find projects an employee is working on</p>
-		</a>
-		<a href="department_summary.php" class="list-group-item list-group-item-action">
-			<h5 class="mb-1">Department Summary</h5>
-			<p class="mb-1">View department statistics and employee counts</p>
-		</a>
+<div class="row justify-content-center">
+	<div class="col-auto">
+		<h1>Employee Database</h1>
+	</div>
+</div>
+
+<div class="row mt-4 justify-content-center">
+	<div class="col-auto">
+		<a class="btn btn-primary" href="/employee/employee_login.php" role="button">Employee Login</a>
+	</div>
+</div>
+
+<div class="row mt-3 justify-content-center">
+	<div class="col-auto">
+		<a class="btn btn-primary" href="/manager/manager_login.php" role="button">Manager Login</a>
 	</div>
 </div>
 
 <?php
-include 'footer.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/templates/footer.php';
 ?>
