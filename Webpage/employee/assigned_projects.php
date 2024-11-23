@@ -67,6 +67,12 @@ try {
 }
 ?>
 
+<div class="row mt-3">
+	<div class="col-auto">
+		<a class="btn btn-secondary" href="javascript:history.back()" role="button">Return</a>
+	</div>
+</div>
+
 <?php
 include $_SERVER['DOCUMENT_ROOT'] . '/templates/footer.php';
 ?>
