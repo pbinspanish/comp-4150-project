@@ -23,25 +23,25 @@ include $_SERVER['DOCUMENT_ROOT'] . '/templates/header.php';
 
 <div class="row mt-3">
 	<div class="col-auto">
-		<a class="btn btn-primary" href="/employee_overview.php" role="button">Overview</a>
+		<a class="btn btn-primary" href="/employee/employee_overview.php" role="button">Overview</a>
 	</div>
 </div>
 
 <div class="row mt-3">
 	<div class="col-auto">
-		<a class="btn btn-primary" href="/assigned_projects.php" role="button">Assigned Projects</a>
+		<a class="btn btn-primary" href="/employee/assigned_projects.php" role="button">Assigned Projects</a>
 	</div>
 </div>
 
 <div class="row mt-3">
 	<div class="col-auto">
-		<a class="btn btn-primary" href="/timesheet.php" role="button">View Timesheet</a>
+		<a class="btn btn-primary" href="/employee/timesheet.php" role="button">View Timesheet</a>
 	</div>
 </div>
 
 <div class="row mt-3">
 	<div class="col-auto">
-		<a class="btn btn-primary" href="/employee_directory.php" role="button">Employee Directory</a>
+		<a class="btn btn-primary" href="/employee/employee_directory.php" role="button">Employee Directory</a>
 	</div>
 </div>
 
