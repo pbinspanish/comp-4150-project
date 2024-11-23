@@ -50,6 +50,18 @@ try {
 
 <div class="row mt-3">
 	<div class="col-auto">
+		<a class="btn btn-primary" href="/shared/dependents.php" role="button">View Dependents</a>
+	</div>
+</div>
+
+<div class="row mt-3">
+	<div class="col-auto">
+		<a class="btn btn-primary" href="/shared/contact_information.php" role="button">Contact Information</a>
+	</div>
+</div>
+
+<div class="row mt-3">
+	<div class="col-auto">
 		<a class="btn btn-secondary" href="javascript:history.back()" role="button">Return</a>
 	</div>
 </div>

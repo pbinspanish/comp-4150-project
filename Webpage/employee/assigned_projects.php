@@ -17,8 +17,7 @@ try {
 	$sql = "SELECT 
 				p.project_name AS project_name,
 				d.department_name AS department_name,
-				l.location_name AS location_name,
-				w.hours AS hours
+				l.location_name AS location_name
 			FROM 
 				works_on w
 			JOIN 
@@ -46,7 +45,6 @@ try {
 							<th>Project</th>
 							<th>Department</th>
 							<th>Location</th>
-							<th>Hours Worked</th>
 						</tr>
 					</thead>
 					<tbody>';
@@ -55,7 +53,6 @@ try {
 					<td>' . htmlspecialchars($project['project_name']) . '</td>
 					<td>' . htmlspecialchars($project['department_name']) . '</td>
 					<td>' . htmlspecialchars($project['location_name']) . '</td>
-					<td>' . htmlspecialchars($project['hours']) . '</td>
 				  </tr>';
 		}
 		echo '</tbody></table></div>';
@@ -66,6 +63,12 @@ try {
 	echo '<div class="alert alert-danger">Error: ' . $e->getMessage() . '</div>';
 }
 ?>
+
+<div class="row mt-3">
+	<div class="col-auto">
+		<a class="btn btn-primary" href="/employee/completed_projects.php" role="button">Completed Projects</a>
+	</div>
+</div>
 
 <div class="row mt-3">
 	<div class="col-auto">
