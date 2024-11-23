@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['ssn'])) {
 
 <div class="row mt-3">
     <div class="col-auto">
-        <a class="btn btn-secondary" href="javascript:history.back()" role="button">Return to Dashboard</a>
+        <a class="btn btn-secondary" href="/manager/manager_dashboard.php" role="button">Return to Dashboard</a>
     </div>
 </div>
 
