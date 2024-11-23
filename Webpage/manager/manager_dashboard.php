@@ -69,7 +69,7 @@ if (!isset($_SESSION['ssn'])) {
 
 <div class="row mt-3">
     <div class="col-auto">
-        <a class="btn btn-secondary" href="javascript:history.back()" role="button">Log Out</a>
+        <a class="btn btn-secondary" href="../shared/logout.php" role="button">Log Out</a>
     </div>
 </div>
 
